@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
 		<link rel="stylesheet" href="css/animate.css" type="text/css">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -31,7 +31,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
+					<div>
 						<nav>
 							<div class="logo-holder"></div>
 							<ul class="clearfix">
@@ -103,7 +103,7 @@
 				</div>
 				<div class="col-md-4 section-text nopadding">
 					<div class="wp6">
-						<h2 class="front-frame">- MY BRAIN -</h2>
+						<h2 class="front-frame">- UX & UI -</h2>
 						<p>Absolutely! brain is the most important thing for human to do all activities. We can't live without our brain, I'm surely know that we can built and developed any creative thought from my brain.</p>
 						<div class="thin-sep"></div>
 					</div>
@@ -248,8 +248,22 @@
 					<div class="col-md-6 col-md-offset-3 sign-up">
 						<h2 class="logo-header">Feel free to contact me!</h2>
 						<form name="signup-form">
+							<input class="signup-input" type="text" name="name" value="" placeholder="enter your name..." title="Please enter your name." required>
 							<input class="signup-input" type="email" name="email_address" value="" placeholder="enter your email..." title="Please enter a valid email address." required>
+							<textarea class="signup-input" type="text" name="message" value="" placeholder="Message..." title="Please write down the messages" required></textarea>
 							<button type="submit" class="submit-btn">GO</button>
+						</form>
+						<h2>Send e-mail to someone@example.com:</h2>
+
+						<form action="mailto:rowena.dinata@gmail.com" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name" value="your name"><br>
+						E-mail:<br>
+						<input type="text" name="mail" value="your email"><br>
+						Comment:<br>
+						<input type="text" name="comment" value="your comment" size="50"><br><br>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
 						</form>
 					</div>
 				</div>
