@@ -173,7 +173,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ==========================================================================
 Headings
 ========================================================================== */
-h1.hero-headline { text-align: center; text-transform: uppercase; color: #ffffff; letter-spacing: 2px; font-size: 24px; font-weight: 600; padding-top: 125px; }
+h1.hero-headline { text-align: center; text-transform: uppercase; color: #ffffff; letter-spacing: 2px; font-size: 36px; font-weight: 600; padding-top: 125px; }
 h2.chain { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/cog-icon.svg) no-repeat top center; padding-top: 75px; }
 .no-svg h2.chain { background: url(../img/cog-icon.png); }
 h2.frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/frame-icon.svg) no-repeat top center; padding-top: 65px; margin-top: 70px; }
@@ -200,9 +200,9 @@ User Styles
 a { color: #282f35; -webkit-transition: all .25s ease; -moz-transition: all .25s ease; -ms-transition: all .25s ease; -o-transition: all .25s ease; transition: all .25s ease; }
 a:hover { color: #d1d2d3; text-decoration: none; }
 p { text-align: center; font-size: 14px; color: #848789; font-weight: 300; word-spacing: 2px; line-height: 1.8em; margin-top: 25px; }
-p.hero-paragraph { font-size: 18px; color: #fff; }
+p.hero-paragraph { font-size: 21px; color: #fff; }
 p.text-intro { font-size: 18px; }
-.hero { background-color: #3c3638; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
+.hero { background-color: #3c3638; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding-bottom: 200px; }
 nav { height: 85px; margin-top: 30px; position: relative; }
 .logo-holder { background: url(../img/main-logo.svg) no-repeat center center; width: 94px; height: 86px; position: absolute; top: 0; left: 0; right: 0; margin: 0 auto; }
 .no-svg .logo-holder { background-image: url(../img/main-logo.png); }
@@ -213,7 +213,7 @@ header ul li { list-style: none; float: left; text-transform: uppercase; letter-
 header ul li a { display: block; margin: 0 30px; color: #fff; font-weight: 100; }
 .r_spacer { margin-right: 222px; }
 .intro { padding: 115px 0; background-color: #fbfbfb; }
-.section-1 { background-color: #8b4041; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
+.section-1 { background: linear-gradient( rgba(139,64,65,0.7), rgba(139,64,65,0.9) ), url(../img/1.jpg); -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-2 { background-color: #96a29e; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-3 { background-color: #57403c; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; position: relative; }
 .section-4 { background-color: #ced7db; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 600px; }
@@ -262,7 +262,7 @@ a.close-overlay.hidden { display: none }
 .signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
 .submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
 section.sign_up { padding: 40px 0 110px 0; }
-footer { background-color: #f7f7f7; padding: 100px 0; }
+footer { background-color: #f7f7f7; padding: 50px 0; }
 footer p { font-size: 13px; margin: 0; }
 .footer-leftcol p { text-align: left; }
 .footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
