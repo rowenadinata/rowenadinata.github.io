@@ -599,21 +599,3 @@ footer p { font-size: 13px; margin: 0; }
     height: auto;
 }
 
-@media (min-width: 768px) {
-	.modal-dialog {
-		width: 70%;
-	}
-}
-@media (max-width: 767px) {
-	.effects { background-color: #282f35; }
-	.effects .img { position: relative; }
-	.effects .img img { display: block; margin: 0; padding: 0; max-width: 100%; height: auto; }
-	.overlay { z-index: 1 }
-	a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 20; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
-	a.close-overlay.hidden { display: none }
-	#effect .overlay { display: none; }
-	#effect .overlay a.expand { position: relative; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 50px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: url(../img/white-bike-icon.png) no-repeat top center; padding-top: 25px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
-	#effect .img { overflow: hidden }
-	#effect .img.hover .overlay { opacity: 1 }
-	#effect .img.hover .overlay a.expand { top: 50%; margin-top: -30px; opacity: 1; }
-}
