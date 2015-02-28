@@ -37,8 +37,8 @@ $(document).ready(function() {
       e.stopPropagation();
       if (!$(this).hasClass("hover")) {
         $(this).addClass("hover");
+        $(".modal", this).modal("show");
       }
-      $('.modal', this).modal('show');
     });
     // handle the closing of the overlay
     $(".close-overlay").click(function(e) {
