@@ -38,6 +38,7 @@ $(document).ready(function() {
       if (!$(this).hasClass("hover")) {
         $(this).addClass("hover");
       }
+      $('.modal').modal('show');
     });
     // handle the closing of the overlay
     $(".close-overlay").click(function(e) {
