@@ -424,10 +424,10 @@
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/owl.carousel.js"></script>
 		<script type="text/javascript">
-		$(document).ready(function() {
-			$(".effects .img").hover(function(){
-			    $('.modal', this).modal('show');
-			});
+		$(document).on(".effects .img",function(){
+		  $(".modal").on("tap",function(){
+		    $(this).show();
+		  });                       
 		});
 		</script>
 	</body>
