@@ -37,7 +37,7 @@ $(document).ready(function() {
       e.stopPropagation();
       if (!$(this).hasClass("hover")) {
         $(this).addClass("hover");
-        $(".modal").show();
+        $(".modal.fade", this).addClass(".in");
       }
 
     });
