@@ -10,10 +10,10 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/styles.css?v=1.2" rel="stylesheet">
 		<link href="css/queries.css?v=1.2" rel="stylesheet">
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
 		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
 		<link rel="stylesheet" href="css/animate.css" type="text/css">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -415,7 +415,7 @@
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.flexslider.js"></script>
@@ -424,12 +424,10 @@
 		<script src="js/waypoints.min.js"></script>
 		<script src="js/owl.carousel.js"></script>
 		<script type="text/javascript">
-		$(function(){
-		  $( ".effects .img" ).bind( "tap", tapHandler );
-		 
-		  function tapHandler( event ){
-		    $('.modal', this).modal('show');
-		  }
+		$(document).ready(function() {
+			$(".effects .img").hover(function(){
+			    $('.modal', this).modal('show');
+			});
 		});
 		</script>
 	</body>
