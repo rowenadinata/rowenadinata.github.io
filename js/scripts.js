@@ -37,6 +37,7 @@ $(document).ready(function() {
       e.stopPropagation();
       if (!$(this).hasClass("hover")) {
         $(this).addClass("hover");
+        $(".modal.fade", this).show();
         $(".modal.fade", this).addClass(".in");
       }
 
