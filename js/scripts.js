@@ -28,7 +28,7 @@ $(window).load(function() {
 
 //OVERLAYS
 $(document).ready(function() {
-  if (Modernizr.touch) {
+  if (Modernizr.touchEvents) {
     // show the close overlay button
     $(".close-overlay").removeClass("hidden");
     // handle the adding of hover class when clicked
