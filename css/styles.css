@@ -226,9 +226,9 @@ header ul li a { display: block; margin: 0 30px; color: #fff; font-weight: 100; 
 .frame-red { background-color: #445963; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 .section-text p { padding: 0 60px; text-align: justify; }
 .arrow { background: url(../img/arrow.png) no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
-.logo-1 { width: 113px; height: 118px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -56px; margin-top: -59px; }
-.logo-2 { width: 177px; height: 152px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -70px; margin-left: -90px; }
-.logo-3 { width: 208px; height: 67px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -110px; margin-top: -10px; }
+.logo-1 { width: 300px; height: 145px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -149px; margin-top: -68px; }
+.logo-2 { width: 300px; height: 193px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -100px; margin-left: -130px; }
+.logo-3 { width: 300px; height: 193px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -151px; margin-top: -74px; }
 .flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
 .flex-twitter-icon { width: 32px; height: 27px; background: url(../img/twitter-bird.png) no-repeat center center; margin: 0 auto; }
 p.twitter-post { color: #848789; font-size: 24px; font-style: italic; font-weight: 300; margin-bottom: 100px; }
@@ -262,7 +262,7 @@ a.close-overlay.hidden { display: none }
 .signup-input { border: solid 1px #d3d7d9; padding: 25px; width: 65%; color: #929292; font-style: italic; letter-spacing: 1px; }
 .submit-btn { background-color: #64c29e; color: #fff; border: solid 1px #64c29e; font-weight: 300; padding: 25px 50px; }
 section.sign_up { padding: 40px 0 110px 0; }
-footer { background-color: #f7f7f7; padding: 50px 0; }
+footer { background-color: #e5eaee; padding: 50px 0; }
 footer p { font-size: 13px; margin: 0; }
 .footer-leftcol p { text-align: left; }
 .footer-rightcol p { text-align: right; font-style: italic; margin-top: 20px; }
@@ -326,22 +326,8 @@ footer p { font-size: 13px; margin: 0; }
 }
 .owl-buttons {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	width: 100%;
-}
-.owl-theme .owl-controls .owl-buttons div.owl-prev {
-	float: left;
-	border-radius: 0;
-	margin: 0;
-	background: #8b4041;
-	padding: 15px;
-}
-.owl-theme .owl-controls .owl-buttons div.owl-next {
-	float: right;
-	border-radius: 0;
-	margin: 0;
-	background: #8b4041;
-	padding: 15px;
 }
 
 .owl-controls {
@@ -386,15 +372,18 @@ footer p { font-size: 13px; margin: 0; }
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
-	margin: 5px;
-	padding: 3px 10px;
+	margin: 0px;
+	padding: 15px 20px;
 	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
+	background: #8b4041;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
+}
+.owl-prev {
+	float: left;
+}
+.owl-next {
+	float: right;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
@@ -421,7 +410,7 @@ footer p { font-size: 13px; margin: 0; }
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	background: #8b4041;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
@@ -618,7 +607,12 @@ footer p { font-size: 13px; margin: 0; }
     width: 100%;
     height: auto;
 }
-
+h4.modal-title {
+	font-size: 2em;
+	text-align: center;
+	font-weight: 600;
+}
+/*============ Media Queries =============*/
 @media (min-width: 768px) {
 	.modal-dialog {
 		width: 70%;
@@ -627,5 +621,8 @@ footer p { font-size: 13px; margin: 0; }
 @media (max-width: 767px) {
 	.owl-buttons {
 		display: none;
+	}
+	h4.modal-title {
+		font-size: 1.2em;
 	}
 }
