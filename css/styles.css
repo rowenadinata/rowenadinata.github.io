@@ -227,7 +227,7 @@ header ul li a { display: block; margin: 0 30px; color: #fff; font-weight: 100; 
 .section-text p { padding: 0 60px; text-align: justify; }
 .arrow { background: url(../img/arrow.png) no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
 .logo-1 { width: 300px; height: 145px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -149px; margin-top: -68px; }
-.logo-2 { width: 300px; height: 193px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -100px; margin-left: -130px; }
+.logo-2 { width: 300px; height: 193px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -100px; margin-left: -150px; }
 .logo-3 { width: 300px; height: 193px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -151px; margin-top: -74px; }
 .flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
 .flex-twitter-icon { width: 32px; height: 27px; background: url(../img/twitter-bird.png) no-repeat center center; margin: 0 auto; }
