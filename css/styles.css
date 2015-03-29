@@ -182,7 +182,7 @@ h2.mech { text-align: center; text-transform: uppercase; color: #353738; letter-
 .no-svg h2.mech { background: url(../img/mech-icon.png); }
 h2.front-frame { text-align: center; text-transform: uppercase; color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; background: url(../img/front-icon.svg) no-repeat top center; padding-top: 65px; margin-top: 70px; }
 .no-svg h2.front-frame { background: url(../img/front-icon.png); }
-p.quote-person { color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; margin-top: 30px; margin-bottom: 100px }
+p.quote-person { color: #353738; letter-spacing: 2px; font-size: 18px; font-weight: 600; margin-top: 30px; margin-bottom: 100pxvint }
 p.quote-person span { color: #848789; font-weight: 300; }
 h2.logo-header { text-align: center; color: #848789; letter-spacing: 1px; font-size: 24px; font-weight: 300; background: url(../img/main-logo.svg) no-repeat top center; padding-top: 120px; margin: 70px 0 40px 0; font-style: italic; }
 .no-svg h2.logo-header { background-image: url(../img/main-logo.png); }
@@ -226,9 +226,9 @@ header ul li a { display: block; margin: 0 30px; color: #fff; font-weight: 100; 
 .frame-red { background-color: #445963; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 .section-text p { padding: 0 60px; text-align: justify; }
 .arrow { background: url(../img/arrow.png) no-repeat center center; width: 21px; height: 10px; margin: -1px auto 0 auto; }
-.logo-1 { width: 300px; height: 145px; background: url(../img/bicycle-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -149px; margin-top: -68px; }
-.logo-2 { width: 300px; height: 193px; background: url(../img/vintage-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -100px; margin-left: -150px; }
-.logo-3 { width: 300px; height: 193px; background: url(../img/bicycles-sml-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -151px; margin-top: -74px; }
+.logo-1 { width: 300px; height: 145px; background: url(../img/design-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -149px; margin-top: -68px; }
+.logo-2 { width: 300px; height: 193px; background: url(../img/front-end-logo.png); position: absolute; left: 50%; top: 50%; margin-top: -100px; margin-left: -150px; }
+.logo-3 { width: 300px; height: 193px; background: url(../img/ux-ui-logo.png); position: absolute; left: 50%; top: 50%; margin-left: -151px; margin-top: -74px; }
 .flex-container { background-color: #f7f7f7; padding: 125px 0 35px; text-align: center; }
 .flex-quote-icon { width: 32px; height: 27px; background: url(../img/twitter-bird.png) no-repeat center center; margin: 0 auto; }
 p.quote-post { color: #848789; font-size: 24px; font-style: italic; font-weight: 300; }
@@ -251,7 +251,7 @@ p.quote-post { color: #848789; font-size: 24px; font-style: italic; font-weight:
 a.close-overlay { display: block; position: absolute; top: 0; right: 0; z-index: 20; width: 45px; height: 45px; font-size: 20px; font-weight: 700; color: #fff; line-height: 45px; text-align: center; background-color: #000; cursor: pointer; }
 a.close-overlay.hidden { display: none }
 #effect .overlay { position: absolute; display: block; top: 0; bottom: 0; left: 0; right: 0; background: rgba(150, 162, 158, 0.8); opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; }
-#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 20px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: url(../img/white-bike-icon.png) no-repeat top center; padding-top: 40px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
+#effect .overlay a.expand { position: absolute; left: 0; right: 0; top: 0; content: ""; margin: 0 auto; border-radius: 30px; text-align: center; color: #fff; line-height: 20px; font-weight: 600; font-size: 14px; opacity: 0; text-transform: uppercase; letter-spacing: 3px; background: url(../img/white-logo-icon.png) no-repeat top center; padding-top: 40px; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; display: block; }
 #effect .img { overflow: hidden }
 #effect .img.hover .overlay { opacity: 1 }
 #effect .img.hover .overlay a.expand { top: 50%; margin-top: -30px; opacity: 1; }
