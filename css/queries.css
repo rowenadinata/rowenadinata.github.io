@@ -5,9 +5,7 @@ CSS Queries
 @media screen and (max-width:640px) {
     .shop-btn { padding: 15px 25px; font-size: 10px; }
 }
-@media screen and (max-width:991px) {
-    .small-featured-img { height: 100px; }
-}
+
 @media screen and (max-width:1200px) {
     p{font-size: 14px; }
     p.hero-paragraph, p.text-intro { margin: 25px 8%; }
