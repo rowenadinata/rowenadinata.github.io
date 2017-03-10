@@ -31,6 +31,6 @@ CSS Queries
 @media only screen and (max-width:1200px) {
     nav { border-bottom: 0; }
     nav ul { display: none; height: auto; }
-    .pullcontainer { width: 100%; text-align: right; padding: 54px 40px 0 0; }
+    .pullcontainer { width: 100%; text-align: right; padding: 0; position: absolute; right: 54px; top: 40px; }
     .pullcontainer a#pull { display: block; width: 100%; color: #fff; }
 }
