@@ -1,0 +1,44 @@
+<footer class="mx-4">
+	<div class="row">
+		<div class="col-sm-4">
+			<ul class="nav">
+				{% for item in site.data.navlist.docs %}
+				<li class="nav-item">
+					<a class="nav-link text-black {% if item.url == page.url %}active fw-bold{% endif %}"
+						href="{{ item.url }}">{{
+						item.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col-sm-8">
+			<h3 class="fs-4 pb-3">Other Works</h3>
+			{% for category in site.categories %}
+			<ul class="nav categories-title d-inline-flex justify-content-center m-3 ms-0">
+				<li class=""><a class="link-dark"
+						href="/category/{{ category | first | replace: ' ', '-' | downcase }}">{{
+						category | first | replace: '-', ' ' | capitalize }} <span class="category-count">{{
+							category[1].size }}</span></a></li>
+			</ul>
+			{% endfor %}
+		</div>
+	</div>
+</footer>
+
+<!-- Javascript Section -->
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+	integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+	integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+	crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+<script src="/assets/js/masonry.js"></script>
+<script src="/assets/js/scripts.js"></script>
+</body>
+
+</html>

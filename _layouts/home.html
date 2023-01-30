@@ -1,0 +1,49 @@
+---
+layout: "wrapper"
+---
+<main>
+  <section class="latest-works ">
+    <div class="custom-gray mb-4 mx-4">
+      <h2 class="label-latest-works text-white text-center p-3">LATEST WORKS</h2>
+      <div class="work-List work-List-latest">
+        {% for post in site.posts limit: 6 %}
+        <article class="list-Card">
+          <a href="{{ post.url }}" class="text-decoration-none">
+            <div class="list-Card_MainImage">
+              <img src="{{ site.imageurl }}{{ post.title | replace: ' ', '-' | downcase }}/thumbnails/thumbs.jpg"
+                class="w-100" alt="{{ post.title }}" />
+            </div>
+            <div class="list-Card_TextArea px-3 py-2">
+              <h4 class="list-Card_Title fw-normal link-dark">{{ post.title }}</h4>
+              <small class="list-Card_Date link-secondary">{{ post.date | date: "%B %d, %Y "}}</small>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="custom-gray mb-4 mx-4">
+      <h2 class="label-top-works text-white text-center p-3">TOP WORKS</h2>
+      <div class="work-List work-List-top js-TileFull">
+        {% assign posts = site.posts | sample:20 %}
+        {% for post in posts %}
+        <article class="list-Card">
+          <a href="{{ post.url }}" class="text-decoration-none">
+            <div class="list-Card_MainImage">
+              <img src="{{ site.imageurl }}{{ post.title | replace: ' ', '-' | downcase}}/thumbnails/thumbs.jpg"
+                class="w-100" alt="{{ post.title }}" />
+            </div>
+            <div class="list-Card_TextArea px-3 py-2">
+              <h2 class="list-Card_Title fs-6 fw-normal link-dark">{{ post.title }}</h2>
+              <small class="list-Card_Date link-secondary">{{ post.date | date: "%B %d, %Y "}}</small>
+            </div>
+          </a>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>

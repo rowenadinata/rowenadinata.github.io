@@ -1,0 +1,15 @@
+---
+layout: "page"
+title: About
+permalink: /about/
+---
+
+<h5>Rowena Dinata</h5>
+<hr />
+<p>I am graphic/digital designer based in Jakarta, Indonesia.</p>
+<p>I am a mother of one son and lately often hear nursery rhymes.</p>
+<p>Attracted to JavaScript and still struggling with it. </p>
+<p>Arsenal fans since childhood and forever will be. </p>
+<br />
+<hr />
+<p>Download my resume in this <a href="{{ site.url }}/assets/docs/resume.pdf" target="_blank" class="fs-bold">link</a></p>

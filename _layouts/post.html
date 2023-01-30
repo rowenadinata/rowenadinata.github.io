@@ -1,0 +1,46 @@
+---
+layout: "wrapper"
+---
+
+<main class="custom-gray mx-4">
+
+	<div class="">
+		{% include breadcrumbs.html %}
+	</div>
+
+	<div class="container px-2 px-xl-5">
+		<div class="row">
+			<div class="col-12 col-xl-8  mb-3">
+				<div class="bg-white rounded p-5">
+					<h3>{{ page.title }}</h3>
+					{{ page.date | date: "%B %d, %Y " }}
+					<br><br>
+					{{ content }}
+				</div>
+
+			</div>
+			<br>
+			<div class="col-lg-4 d-none d-lg-block sidebar">
+				<div class="bg-white rounded p-4">
+					<h3 class="fs-4 pb-3">Other Works</h3>
+					{% for category in site.categories %}
+					<h5 class="fs-6"><a class="link-secondary"
+							href="/category/{{ category | first | replace: ' ', '-' | downcase }}">{{
+							category | first | replace: '-', ' ' | capitalize }} <span class="category-count">{{
+								category[1].size
+								}}</span></h5>
+					</h3>
+					<ul class="ps-0 pb-3">
+						{% for post in category[1] %}
+						<li><a href="{{ post.url }}" class="text-dark">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+</main>
+<br>

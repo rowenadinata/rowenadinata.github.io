@@ -1,0 +1,22 @@
+---
+layout: "wrapper"
+---
+<main>
+    <section>
+        <div class="custom-gray mb-4 mx-4">
+            <h2 class="label-top-works text-white text-center py-3">ARCHIVE</h2>
+            <div class="work-List work-lists js-TileFull">
+                {% for cat in site.categories %}
+                <h3>{{ cat[0] }}</h3>
+                <ul>
+                    {% for post in cat[1] %}
+                    {% if post.categories contains cat[1] %}
+                    <li><a href="{{ post.url }}"></a>{{ post.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</main>
