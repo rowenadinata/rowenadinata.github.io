@@ -2,26 +2,26 @@
 layout: "wrapper"
 ---
 <main>
-    <section>
-        <div class="custom-gray mb-4 mx-4">
-            <h2 class="label-top-works text-white text-center py-3">ALL WORKS</h2>
-            <div class="work-List work-lists js-TileFull">
-                {% assign posts = site.posts | sample:200 %}
-                {% for post in posts %}
-                <article class="list-Card">
-                    <a href="{{ post.url }}" class="text-decoration-none">
-                        <div class="list-Card_MainImage">
-                            <img src="{{ site.imageurl }}{{ post.title | replace: ' ', '-' | downcase }}/thumbnails/thumbs.jpg"
-                                class="w-100" alt="{{ post.title }}" />
-                        </div>
-                        <div class="list-Card_TextArea px-3 py-2">
-                            <h2 class="list-Card_Title fs-6 fw-normal link-dark">{{ post.title }}</h2>
-                            <small class="list-Card_Date link-secondary">{{ post.date | date: "%B %d, %Y "}}</small>
-                        </div>
-                    </a>
-                </article>
-                {% endfor %}
-            </div>
+    <section class="all-works">
+        <div class="custom-gray mb-4 mx-4 px-5 pb-4">
+          <h2 class="label-top-works text-white text-center p-3">ALL WORKS</h2>
+          <div class="row px-5">
+            {% assign posts = site.posts | sample:20 %}
+            {% for post in posts %}
+            <article class="list-Card p-0">
+              <a href="{{ post.url }}" class="position-relative d-block text-decoration-none rounded bg-white m-3 pb-2">
+                <div class="list-Card_MainImage">
+                  <img src="{{ site.imageurl }}{{ post.title | replace: ' ', '-' | downcase}}/thumbnails/thumbs.jpg"
+                    class="w-100" alt="{{ post.title }}" />
+                </div>
+                <div class="list-Card_TextArea px-3 py-2">
+                  <h2 class="list-Card_Title fw-normal link-dark">{{ post.title }}</h2>
+                  <small class="list-Card_Date link-secondary">{{ post.date | date: "%B %d, %Y "}}</small>
+                </div>
+              </a>
+            </article>
+            {% endfor %}
+          </div>
         </div>
-    </section>
+      </section>
 </main>

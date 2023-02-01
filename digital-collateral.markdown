@@ -1,6 +1,5 @@
 ---
 layout: digital-collateral
 title: DIGITAL COLLATERAL
-permalink: category/digital-collateral
+permalink: /category/digital-collateral/
 ---
-

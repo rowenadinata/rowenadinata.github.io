@@ -1,21 +1,20 @@
 ---
 layout: "wrapper"
-permalink: /category/email-blast
 ---
 <main>
-    <section>
-        <div class="custom-gray mb-4 mx-4">
+    <section class="all-works">
+        <div class="custom-gray mb-4 mx-4 px-5 pb-4">
             <h2 class="label-top-works text-center py-3">{{ page.title }}</h2>
             <div class="work-List work-lists js-TileFull">
                 {% for post in site.categories['email-blast'] %}
                 <article class="list-Card">
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="text-decoration-none">
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="position-relative d-block text-decoration-none rounded bg-white m-3 pb-2">
                         <div class="list-Card_MainImage">
                             <img src="{{ site.imageurl }}{{ post.title | replace: ' ', '-' | downcase }}/thumbnails/thumbs.jpg"
                                 class="w-100" alt="{{ post.title }}" />
                         </div>
                         <div class="list-Card_TextArea px-3 py-2">
-                            <h2 class="list-Card_Title fs-6 fw-normal link-dark">{{ post.title }}</h2>
+                            <h2 class="list-Card_Title fw-normal link-dark">{{ post.title }}</h2>
                             <small class="list-Card_Date link-secondary">{{ post.date | date: "%B %d, %Y "}}</small>
                         </div>
                     </a>

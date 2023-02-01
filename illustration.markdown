@@ -1,6 +1,5 @@
 ---
 layout: illustration
 title: ILLUSTRATION
-permalink: category/illustration
+permalink: /category/illustration/
 ---
-
