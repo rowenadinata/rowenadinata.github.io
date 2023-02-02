@@ -371,6 +371,17 @@ screen and (min-width: 950px) {
   }
 }
 
+@media screen and (max-width: 599px) {
+  .post-gray {
+    padding: 0.5rem !important;
+    margin: 0.5rem !important;
+  } 
+  .custom-white {
+    padding: 5% !important
+  }
+
+}
+
 /* ----------------------------------------
   Sidebar
 ---------------------------------------- */
